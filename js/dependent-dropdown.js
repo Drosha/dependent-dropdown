@@ -94,7 +94,7 @@
         },
         listen: function (i, depends, len) {
             var self = this;
-            $('#' + depends[i]).on('depdrop:change change select2:select krajeeselect2:cleared', function (e) {
+            $('#' + depends[i]).on('depdrop:change change select2:select krajeeselect2:cleared krajeeselect2:selectall krajeeselect2:unselectall', function (e) {
                 var $select = $(this);
                 if (!$h.isEmpty($select.data('select2')) && e.type === 'change') {
                     return;
